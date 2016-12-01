@@ -1,9 +1,14 @@
 {
   "people": [
-    { 
+    {
       "name": "Michał Kawalec" ,
       "seedChoice": 1337,
       "slackUsername": "michal"
+    },
+    {
+      "name": "Pawel Chojnacki",
+      "seedChoice": 124341,
+      "slackUsername": "pawel"
     }
   ]
 }
