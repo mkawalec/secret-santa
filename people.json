@@ -34,6 +34,11 @@
       "name": "Ryan Chartrand",
       "seedChoice": 314159,
       "slackUsername": "ryanchartrand"
+    },
+    {
+      "name": "Kerem Gocen",
+      "seedChoice": 1204,
+      "slackUsername": "kerem"
     }    
   ]
 }
