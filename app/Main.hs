@@ -37,12 +37,6 @@ instance FromJSON Config
 readPeople :: FilePath -> IO (Maybe Config)
 readPeople fileName = decode <$> B.readFile fileName
 
-findPair :: [(Person, Person)] -> (Set Person, (Person, Person)) -> [(Person, Person)]
-findPair result (used, pair@(first, second)) = DT.traceShow (null result) $
-  if (S.notMember first used) && (S.notMember second used)
-    then pair:result
-    else result
-
 randomPairs :: R.StdGen -> Int -> Set Person -> [Person] -> [(Set Person, (Person, Person))]
 randomPairs rndGen pplLength seen people = 
     if first /= second && (S.notMember first seen) && (S.notMember second seen)
