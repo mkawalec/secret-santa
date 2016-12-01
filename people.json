@@ -24,6 +24,11 @@
       "name": "Noah Muth",
       "seedChoice": 420,
       "slackUsername": "noah.muth"
+    },
+    {
+      "name": "Kelvin De Moya",
+      "seedChoice": 8080,
+      "slackUsername": "kdemoya"
     }
   ]
 }
