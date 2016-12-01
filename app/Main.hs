@@ -17,6 +17,9 @@ import qualified Debug.Trace as DT
 newtype Name = Name Text
   deriving (Eq, Ord, Show, Read, Generic)
 
+getName :: Name -> Text
+getName (Name name) = name
+
 data Person = Person {
   name :: Name,
   seedChoice :: Integer,
@@ -55,10 +58,10 @@ randomPairs rndGen pplLength seen people =
 genPairs :: R.StdGen -> [Person] -> [(Person, Person)]
 genPairs rndGen people = map snd $ randomPairs rndGen (length people) S.empty people
 
-formatPairs :: [(Person, Person)] -> String
+formatPairs :: [(Person, Person)] -> Text
 formatPairs = foldl (\acc (first, second) -> 
-    acc ++ (format first) ++ " <---> "  ++ (format second) ++ "\n") ""
-  where format = \person -> show $ slackUsername person
+    T.concat [acc,  (format first),  " <---> ",  (format second),  "\n"]) ""
+  where format = \person -> T.concat [slackUsername person, " (", getName $ name person, ")"]
 
 main :: IO ()
 main = do
@@ -74,6 +77,6 @@ main = do
       putStrLn $ "We have " ++ (show $ length ppl) ++ " people playing"
       if length ppl `mod` 2 /= 0
         then fail "we need the number of people divisible by two"
-        else putStrLn . formatPairs $ take (length ppl `quot` 2) (genPairs stdGen ppl)
+        else putStrLn . T.unpack . formatPairs $ take (length ppl `quot` 2) (genPairs stdGen ppl)
 
 
