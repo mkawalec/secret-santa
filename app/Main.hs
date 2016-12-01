@@ -63,10 +63,10 @@ main = do
   case parsedPeople of
     Nothing -> fail "wrong filename format?"
     Just config -> do
-      let seeds = map (seedChoice) ppl
-          seed = fromIntegral $ foldl (\acc s -> acc + s `mod` 12345123) 0 seeds
+      let seeds  = map (seedChoice) ppl
+          seed   = fromIntegral $ foldl (\acc s -> acc + s `mod` 12345123) 0 seeds
           stdGen = R.mkStdGen seed
-          ppl = people config
+          ppl    = people config
 
       putStrLn $ "We have " ++ (show $ length ppl) ++ " people playing"
       if length ppl `mod` 2 /= 0
