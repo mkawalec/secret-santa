@@ -19,6 +19,11 @@
       "name": "Joel Costa",
       "seedChoice": 9001,
       "slackUsername": "joel"
+    },
+    {
+      "name": "Diego Ferreira",
+      "seedChoice": 7175,
+      "slackUsername": "diegoferreira"
     }    
   ]
 }
