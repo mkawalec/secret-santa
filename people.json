@@ -29,6 +29,11 @@
       "name": "Kelvin De Moya",
       "seedChoice": 8080,
       "slackUsername": "kdemoya"
-    }
+    },
+    {
+      "name": "Ryan Chartrand",
+      "seedChoice": 314159,
+      "slackUsername": "ryanchartrand"
+    }    
   ]
 }
