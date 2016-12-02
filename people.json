@@ -39,6 +39,11 @@
       "name": "Kerem Gocen",
       "seedChoice": 1204,
       "slackUsername": "kerem"
-    }    
+    },
+    {
+      "name": "Yulia Tsyba",
+      "seedChoice": 481516,
+      "slackUsername": "justtry"
+    }
   ]
 }
