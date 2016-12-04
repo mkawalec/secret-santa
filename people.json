@@ -49,6 +49,41 @@
       "name": "Diego Seghezzo",
       "seedChoice": 2949,
       "slackUsername": "diego.seghezzo"
+    },
+    {
+      "name": "William Cabrera",
+      "seedChoice": 481989,
+      "slackUsername": "williamcabrera"
+    },
+    {
+      "name": "Dylan Coffey",
+      "seedChoice": 84210,
+      "slackUsername": "dylancoffey"
+    },
+    {
+      "name": "Ali Uz",
+      "seedChoice": 8049,
+      "slackUsername": "auz"
+    },
+    {
+      "name": "Diego Ferreira",
+      "seedChoice": 5230,
+      "slackUsername": "diegoferreira"
+    },
+    {
+      "name": "Juan Jimenez",
+      "seedChoice": 8425,
+      "slackUsername": "jenriquejr"
+    },
+    {
+      "name": "Ryan Chartrand",
+      "seedChoice": 8140,
+      "slackUsername": "ryanchartrand"
+    },
+    {
+      "name": "George Ziady",
+      "seedChoice": 10004,
+      "slackUsername": "george.ziady"
     }
   ]
 }
