@@ -84,6 +84,11 @@
       "name": "George Ziady",
       "seedChoice": 10004,
       "slackUsername": "george.ziady"
+    },
+    {
+      "name": "Elie Lagmay",
+      "seedChoice": 125432,
+      "slackUsername": "elie"
     }
   ]
 }
